@@ -9,8 +9,8 @@ sudo pacman -Sy git xorg vlc vim firefox spectacle libreoffice-fresh numlockx pu
 cd
 git clone https://github.com/edwardbas-pl/dmenu.git
 cd dmenu
-rm -rf dmenu
 sudo make install
+rm -rf dmenu
 cd
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git

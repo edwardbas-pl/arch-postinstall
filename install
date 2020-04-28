@@ -4,7 +4,7 @@ sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
 sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 
-sudo pacman -Sy git xorg vlc vim firefox spectacle libreoffice-fresh numlockx pulseaudio amd-ucode galculator ntfs-3g lightdm  picom lightdm-gtk-greeter feh w3m yad xdotool code kitty pulseaudio-alsa alsa-oss nemo ranger dunst xf86-video-amdgpu lxappearance gimp alsa-firmware --noconfirm
+sudo pacman -Sy git xorg vlc gtop htop vim firefox spectacle libreoffice-fresh numlockx pulseaudio amd-ucode galculator ntfs-3g lightdm  picom lightdm-gtk-greeter feh w3m yad xdotool code kitty pulseaudio-alsa alsa-oss nemo ranger dunst xf86-video-amdgpu lxappearance gimp alsa-firmware --noconfirm
 
 cd
 git clone https://github.com/edwardbas-pl/dmenu.git

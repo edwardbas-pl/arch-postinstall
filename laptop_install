@@ -4,7 +4,8 @@ sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
 sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 
-sudo pacman -Sy git xorg vlc libre-office-fresh spectacle deadbeef firefox pulseadio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
+
+sudo pacman -Sy git xorg vlc libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
 
 cd dmenu
 sudo make install
@@ -23,7 +24,7 @@ cd
 #rm -r gimpshop-reloaded
 
 
-yay -S pywal-git polybar i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings --noconfirm
+yay -S pywal-git pfetch polybar i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings --noconfirm
 
 ln -s /run/media/$USER/     ~/Media
 

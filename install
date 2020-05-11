@@ -17,7 +17,7 @@ cd yay-git
 makepkg -si --noconfirm
 cd
 rm -rf yay-git
-yay -S pywal-git pfetch ttf-symbola polybar udisks2 i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
+yay -S wal-git pfetch ttf-symbola polybar udisks2 i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 cd
 git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded

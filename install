@@ -23,8 +23,6 @@ git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded
 chmod +x linux-install-2.10.sh
 ./linux-install-2.10.sh
-cd 
-rm -rf gimpshop-reloaded
 cd
 git clone https://github.com/edwardbas-pl/backup.git
 cd backup

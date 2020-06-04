@@ -7,25 +7,29 @@ sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 sudo pacman -Sy git xorg vlc xclip picom libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
 
+cd
 git clone https://github.com/edwardbas-pl/dmenu.git
 cd dmenu
 sudo make install
+rm -rf dmenu
 cd
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 makepkg -si --noconfirm
 cd
-rm -fr yay-git
+rm -rf yay-git
+yay -S pfetch ttf-symbola polybar udisks2 i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 cd
 git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded
 chmod +x linux-install-2.10.sh
 ./linux-install-2.10.sh
-cd 
-#rm -r gimpshop-reloaded
-
-
-yay -S pywal-git pfetch dunst polybar i3-gaps-rounded-git lightdm-slick-greeter lightdm-settings --noconfirm
+cd
+git clone https://github.com/edwardbas-pl/backup.git
+cd backup
+./Restore
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -s /run/media/$USER/     ~/Media
 

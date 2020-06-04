@@ -5,7 +5,7 @@ sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 
 
-sudo pacman -Sy git xorg vlc xclip picom libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
+sudo pacman -Sy git xorg vlc xclip picom python-pywal libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
 
 cd
 git clone https://github.com/edwardbas-pl/dmenu.git

@@ -5,7 +5,7 @@ sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 
 
-sudo pacman -Sy git xorg vlc xclip picom python-pywal i3lock xss-lock libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
+sudo pacman -Sy git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
 
 sudo mkdir -p /usr/share/backgrounds
 
@@ -21,7 +21,7 @@ makepkg -si --noconfirm
 cd
 rm -rf yay-gsh
 it
-yay -S pfetch ttf-symbola polybar network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
+yay -S pfetch ttf-symbola polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 cd
 git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded

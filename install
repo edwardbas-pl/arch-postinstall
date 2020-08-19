@@ -17,7 +17,6 @@ cd yay-git
 makepkg -si --noconfirm
 cd
 rm -rf yay-git
-yay -S wd719x-firmware aic94xx-firmware pfetch ttf-symbola polybar compton-tryone-git udisks2 lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 cd
 git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded
@@ -27,6 +26,8 @@ cd
 git clone https://github.com/edwardbas-pl/backup.git
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+yay -S wd719x-firmware aic94xx-firmware pfetch ttf-symbola polybar compton-tryone-git udisks2 lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 
 ln -s /run/media/$USER/     ~/Media
 

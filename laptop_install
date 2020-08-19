@@ -21,7 +21,6 @@ makepkg -si --noconfirm
 cd
 rm -rf yay-gsh
 it
-yay -S pfetch ttf-symbola polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 cd
 git clone https://github.com/cttynul/gimpshop-reloaded.git
 cd gimpshop-reloaded
@@ -36,6 +35,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ln -s /run/media/$USER/     ~/Media
 
+yay -S pfetch ttf-symbola polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 
 sudo systemctl enable lightdm
 systemctl enable --user dunst

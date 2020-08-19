@@ -19,97 +19,97 @@ This repository include 3 scirpts:
 - Enable lightdm and dunst services
 - Restore Dotfiles Backup
 ## Desktop postinstall script contains:
-- Official Arch Repository Package list:
-    - git
-    - qbittorrent
-    - xclip
-    - python-pywal
-    - i3-gaps
-    - xorg
-    - vlc
-    - gtop
-    - htop
-    - vim
-    - firefox
-    - spectacle
-    - libreoffice-fresh
-    - numlockx
-    - pulseaudio
-    - amd-ucode
-    - galculator
-    - ntfs-3g
-    - lightdm
-    - lightdm-gtk-greeter
-    - feh
-    - w3m
-    - yad
-    - xdotool
-    - code
-    - kitty
-    - pulseaudio-alsa
-    - alsa-oss
-    - nemo
-    - ranger
-    - dunst
-    - xf86-video-amdgpu
-    - lxappearance
-    - gimp
-    - alsa-firmware
-- AUR Package List:
-    - wd719x-firmware
-    - aic94xx-firmware
-    - pfetch
-    - ttf-symbola
-    - polybar
-    - compton-tryone-git
-    - udisks2
-    - lightdm-slick-greeter
-    - lightdm-settings
-    - apulse
-    - ttf-dejavu
-    - ttf-liberation
+### Official Arch Repository Package list:
+- git
+- qbittorrent
+- xclip
+- python-pywal
+- i3-gaps
+- xorg
+- vlc
+- gtop
+- htop
+- vim
+- firefox
+- spectacle
+- libreoffice-fresh
+- numlockx
+- pulseaudio
+- amd-ucode
+- galculator
+- ntfs-3g
+- lightdm
+- lightdm-gtk-greeter
+- feh
+- w3m
+- yad
+- xdotool
+- code
+- kitty
+- pulseaudio-alsa
+- alsa-oss
+- nemo
+- ranger
+- dunst
+- xf86-video-amdgpu
+- lxappearance
+- gimp
+- alsa-firmware
+### AUR Package List:
+- wd719x-firmware
+- aic94xx-firmware
+- pfetch
+- ttf-symbola
+- polybar
+- compton-tryone-git
+- udisks2
+- lightdm-slick-greeter
+- lightdm-settings
+- apulse
+- ttf-dejavu
+- ttf-liberation
 ## Laptop postinstall script contains:
-- Official Arch Repository Package list:
-    - git
-    - xorg
-    - vlc
-    - xclip
-    - python-pywal
-    - i3lock
-    - xss-lock
-    - libreoffice-fresh
-    - spectacle
-    - deadbeef
-    - firefox
-    - pulseaudio
-    - galculator
-    - intel-ucode
-    - lightdm
-    - lightdm-gtk-greeter
-    - feh
-    - w3m
-    - yad
-    - xdotool
-    - code
-    - kitty
-    - nemo
-    - ranger
-    - dunst
-    - xf86-video-intel
-    - lxappearance
-    - gimp
-- AUR Package List:
-    - pfetch
-    - ttf-symbola
-    - polybar
-    - compton-tryone-git
-    - network-manager-applet
-    - udisks2
-    - i3-gaps
-    - wd719x-firmware
-    - aic94xx-firmware
-    - lightdm-slick-greeter
-    - lightdm-settings
-    - apulse
-    - ttf-dejavu
-    - ttf-liberation
+### Official Arch Repository Package list:
+- git
+- xorg
+- vlc
+- xclip
+- python-pywal
+- i3lock
+- xss-lock
+- libreoffice-fresh
+- spectacle
+- deadbeef
+- firefox
+- pulseaudio
+- galculator
+- intel-ucode
+- lightdm
+- lightdm-gtk-greeter
+- feh
+- w3m
+- yad
+- xdotool
+- code
+- kitty
+- nemo
+- ranger
+- dunst
+- xf86-video-intel
+- lxappearance
+- gimp
+### AUR Package List:
+- pfetch
+- ttf-symbola
+- polybar
+- compton-tryone-git
+- network-manager-applet
+- udisks2
+- i3-gaps
+- wd719x-firmware
+- aic94xx-firmware
+- lightdm-slick-greeter
+- lightdm-settings
+- apulse
+- ttf-dejavu
+- ttf-liberation

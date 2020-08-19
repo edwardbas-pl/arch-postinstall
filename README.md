@@ -8,7 +8,7 @@ This repository include 3 scirpts:
 
 ## execution steps:
 - install reflector (for download speed optimization).
-- make mirrorlist backup in ``/etc/pacman.d/``.
+- make mirrorlist backup in ``/etc/pacman.d/``
 - execute ``sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist`` to rank mirror by speed.
 - Install packages from Official Arch repos.
 - Clone necessary  repositories (my dmenu build, yay, gimpshop reloaded, dotfiles ackup)

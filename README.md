@@ -2,17 +2,17 @@
 This is Arch Linux Post-Install script to use after mninimal install.
 For both ``install`` and ``laptop_install`` it behave similarly
 This repository include 3 scirpts:
-- games - this script install Steam, Wine, etc... (needs multilib repository to be anebled in paacman.conf).
-- install - this script is for desktop computers with amd CPU's without wifi.
-- laptop install - this scrip was writen in thinkpad t460 in mind.
+- ``games`` - this script install Steam, Wine, etc... (needs multilib repository to be anebled in paacman.conf).
+- ``install`` - this script is for desktop computers with amd CPU's without wifi.
+- ``laptop_install`` - this scrip was writen in thinkpad t460 in mind.
 
 ## execution steps:
-- install reflector (for download speed optimization).
-- make mirrorlist backup in ``/etc/pacman.d/``
+- Install reflector (for download speed optimization).
+- Make mirrorlist backup in ``/etc/pacman.d/``
 - execute ``sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist`` to rank mirror by speed.
 - Install packages from Official Arch repos.
 - Clone necessary  repositories (my dmenu build, yay, gimpshop reloaded, dotfiles ackup)
-- install vim-plug
+- Install vim-plug
 - Install AUR Packages
 - Make symbolic link betwen ``/run/media/username/`` and ``/home/username/Media/`` for more convinient access to mounted usb drives form Terminal
 - Exec mkinitcpio -P

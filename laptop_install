@@ -5,7 +5,7 @@ sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 
 
-sudo pacman -Sy git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle deadbeef firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
+sudo pacman -Sy git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
 
 sudo mkdir -p /usr/share/backgrounds
 

@@ -1,0 +1,21 @@
+#!/bin/sh
+pacman -Sy git dialog
+DESKTOP=$( dialog --menu --stdout "Chose your Desktop" 10 60 10 i3 "customized i3 desktop with polybar" bspwm "bspwm and polybar with rounded corners" Gnome "minimal Gnome Desktop Enviornment")
+$TERMINAL = kitty
+clear
+echo $DESKTOP
+if [ $DESKTOP = i3 ]
+then
+    echo "That function is under construction"
+elif [ $DESKTOP = Gnome ]
+then
+    pacman -S gnome-shell nautilus $TERMINAL gnome-tweak-tool gnome-control-center xdg-user-dirs
+elif [ $DESKTOP = bspwm ]
+then
+    pacman -S gnome-shell nautilus gnome-terminal guake gnome-tweak-tool gnome-control-center xdg-user-dirs
+
+
+
+
+sudo systemctl enable lightdm
+

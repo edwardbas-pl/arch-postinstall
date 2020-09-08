@@ -1,0 +1,31 @@
+sudo pacman -Sy git qbittorrent xclip python-pywal i3-gaps xorg vlc gtop htop vim firefox spectacle libreoffice-fresh numlockx pulseaudio galculator ntfs-3g lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty pulseaudio-alsa alsa-oss nemo ranger dunst xf86-video-amdgpu lxappearance gimp alsa-firmware lightdm-runit --noconfirm
+
+cd
+git clone https://github.com/edwardbas-pl/dmenu.git
+cd dmenu
+sudo make install
+rm -rf dmenu
+cd
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si --noconfirm
+cd
+rm -rf yay-git
+cd
+git clone https://github.com/cttynul/gimpshop-reloaded.git
+cd gimpshop-reloaded
+chmod +x linux-install-2.10.sh
+./linux-install-2.10.sh
+cd
+git clone https://github.com/edwardbas-pl/backup.git
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
+
+yay -S wd719x-firmware aic94xx-firmware pfetch ttf-symbola polybar compton-tryone-git udisks2 lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
+
+ln -s /run/media/$USER/     ~/Media
+
+sudo mkinitcpio -P
+cd backup
+./Restore

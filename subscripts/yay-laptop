@@ -1,4 +1,4 @@
 #!/bin/sh
-
-yay -Sy --noconfirm git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle firefox pulseaudio galculator lightdm lightdm-gtk-greeter feh w3m yad xdotool kitty nemo ranger dunst xf86-video-intel lxappearance pfetch ttf-symbola polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
+#yay-laptop install script
+yay -Sy --noconfirm git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle firefox pulseaudio galculator lightdm lightdm-gtk-greeter feh w3m yad xdotool kitty nemo ranger dunst xf86-video-intel lxappearance pfetch ttf-symbola-free polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
 

@@ -5,6 +5,7 @@ sh subscripts/mirrors
 sh subscripts/yay-install
 sh subscripts/yay-desktop 
 sh subscripts/misc
+sudo mkinitcpio -P
 
 ln -s /etc/runit/sv/lightdm /run/runit/service
 

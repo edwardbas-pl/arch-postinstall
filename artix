@@ -1,7 +1,6 @@
 #!/bin/sh
 #artix desktop install
 sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service
-sh subscripts/mirrors
 sh subscripts/yay-install
 sh subscripts/yay-desktop 
 sh subscripts/misc

@@ -1,45 +1,8 @@
 #!/bin/sh
-sudo pacman -S reflector --noconfirm
-sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
-sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
+#arch laptop install script
 
+sh subscripts/mirrors
+sh subscripts/yay-install
+sh subscripts/yay-laptop
+sh subscripts/misc
 
-
-sudo pacman -Sy git xorg vlc xclip python-pywal i3lock xss-lock libreoffice-fresh spectacle firefox pulseaudio galculator intel-ucode lightdm lightdm-gtk-greeter feh w3m yad xdotool code kitty nemo ranger dunst xf86-video-intel lxappearance gimp --noconfirm
-
-sudo mkdir -p /usr/share/backgrounds
-
-cd
-git clone https://github.com/edwardbas-pl/dmenu.git
-cd dmenu
-sudo make install
-rm -rf dmenu
-cd
-git clone https://aur.archlinux.org/yay-git.git
-cd yay-git
-makepkg -si --noconfirm
-cd
-rm -rf yay-gsh
-it
-cd
-git clone https://github.com/cttynul/gimpshop-reloaded.git
-cd gimpshop-reloaded
-chmod +x linux-install-2.10.sh
-./linux-install-2.10.sh
-cd
-git clone https://github.com/edwardbas-pl/backup.git
-cd backup
-./Restore
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
-
-ln -s /run/media/$USER/     ~/Media
-
-yay -S pfetch ttf-symbola polybar compton-tryone-git network-manager-applet udisks2 i3-gaps wd719x-firmware aic94xx-firmware lightdm-slick-greeter lightdm-settings apulse ttf-dejavu ttf-liberation --noconfirm
-
-sudo systemctl enable lightdm
-systemctl enable --user dunst
-systemctl start --user dunst
-
-sudo mkinitcpio -P

@@ -1,9 +1,7 @@
 #!/bin/sh
-#Arch desktop install script
+#artix laptop install script
 
 sh subscripts/mirrors
 sh subscripts/yay-install
-sh subscripts/yay-desktop 
+sh subscripts/yay-laptop 
 sh subscripts/misc
-
-

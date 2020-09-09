@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cd
+git clone https://github.com/edwardbas-pl/dmenu.git
+cd dmenu
+sudo make install
+cd
+rm -rf dmenu
+git clone https://github.com/cttynul/gimpshop-reloaded.git
+cd gimpshop-reloaded
+chmod +x linux-install-2.10.sh
+sh linux-install-2.10.sh
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
+
+ln -s /run/media/$USER/     ~/Media

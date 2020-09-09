@@ -1,8 +1,9 @@
 #!/bin/sh
 #artix laptop install script
-
+sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service
 sh subscripts/mirrors
 sh subscripts/yay-install
 sh subscripts/yay-laptop 
 sh subscripts/misc
 sudo mkinitcpio -P
+ln -s /etc/runit/sv/lightdm /run/runit/service

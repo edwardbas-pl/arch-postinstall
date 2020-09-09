@@ -10,7 +10,7 @@ then
     yay -S i3-gaps
 elif [ $DESKTOP = Gnome ]
 then
-    pacman -S gnome-shell gnome-tweak-tool gnome-control-center 
+    yay -S gnome-shell gnome-tweak-tool gnome-control-center 
 elif [ $DESKTOP = bspwm ]
 then
     yay -S bspwm sxhkd

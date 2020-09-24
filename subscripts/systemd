@@ -2,4 +2,4 @@
 
 sudo systemctl enable lightdm
 systemctl enable --user dunst
-systemctl strat --user dunst
+systemctl start --user dunst

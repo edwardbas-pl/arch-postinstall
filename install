@@ -6,5 +6,6 @@ sh subscripts/yay-install
 sh subscripts/yay-desktop 
 sh subscripts/misc
 sudo mkinitcpio -P
-sudo pacman -S code
+sudo pacman -S code --noconfirm
+sh subscripts/systemd 
 

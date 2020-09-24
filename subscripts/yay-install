@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman -Sy git
+sudo pacman -Sy git --noconfirm
 cd
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git

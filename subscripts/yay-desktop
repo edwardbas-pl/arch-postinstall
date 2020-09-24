@@ -1,3 +1,3 @@
 #!/bin/sh
 #desktop install script
-yay -S --noconfirm  git qbittorrent xclip pfetch python-pywal i3-gaps xorg vlc gtop htop vim firefox spectacle libreoffice-fresh numlockx pulseaudio galculator ntfs-3g polybar lightdm lightdm-slick-greeter feh w3m yad xdotool kitty pulseaudio-alsa alsa-oss nemo ranger dunst xf86-video-amdgpu lxappearance gimp ttf-symbola-free alsa-firmware 
+yay -S --noconfirm  git qbittorrent compton-tryone-git xclip pfetch python-pywal i3-gaps xorg vlc gtop htop vim firefox spectacle libreoffice-fresh numlockx pulseaudio galculator ntfs-3g polybar lightdm lightdm-slick-greeter feh w3m yad xdotool kitty pulseaudio-alsa alsa-oss nemo ranger dunst xf86-video-amdgpu lxappearance gimp ttf-symbola-free alsa-firmware 

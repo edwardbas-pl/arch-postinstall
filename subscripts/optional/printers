@@ -1,5 +1,15 @@
 #!/bon/bash
 
+distro=$(grep -m 1 NAME /etc/os-release)
+
 yay -S --noconfirm cups hplip hplip-plugin hpuld
 
-sudo systemctl enable --now cups
+if [[ ${distro} == *Arch* ]];
+then
+	sudo systemctl enable --now cups
+fi
+
+if [[ ${distro} == *Artix* ]];
+then
+	sudo ln -s /etc/runit/sv/cups /etc/runit/service
+fi

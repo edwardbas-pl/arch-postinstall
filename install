@@ -7,6 +7,17 @@ sh subscripts/yay-universal
 sh subscripts/yay-desktop 
 sh subscripts/misc
 sudo mkinitcpio -P
-sh subscripts/systemd 
 sh subscripts/dialog
+
+distro=$( grep -m 1 /etc/os-release )
+
+if [[ ${distro} == *Arch* ]];
+then
+	sudo systemctl start lightdm
+fi
+
+if [[ ${distro} == *Artix* ]];
+then
+	sudo ln -s /etc/runit/sv/lightdm /etc/runit/service
+fi
 

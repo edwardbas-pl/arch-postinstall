@@ -1,0 +1,15 @@
+#!/bin/sh
+#desktop install script
+compositor="picom-jonaburg-git"
+web_browser="firefox qutebrowser"
+multimedia_player="mpv vlc"
+office_suite=" libreoffice-fresh galculator "
+fonts=" ttf-symbola ttf-dejavu ttf-liberation "
+GUI=" betterlockscreen i3-gaps nemo bspwm sxhkd xorg polybar lightdm lightdm-slick-greeter dunst lxappearance yad xdotool"
+GUI_backend="xclip spectacle pulseaudio feh w3m alsa-firmware apulse pulseaudio-alsa alsa-oss "
+appearance=" python-pywal pfetch "
+terminal=" kitty "
+terminal_apps=" git rar ranger gtop htop vim udisks2 "
+other=" numlockx qbittorrent gimp dhcpcd code"
+yay -S --noconfirm  $compositor $web_browser $multimedia_player $office_suite $fonts $GUI $GUI_backend $appearance $terminal $terminal_apps $other
+

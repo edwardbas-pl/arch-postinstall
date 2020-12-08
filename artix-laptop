@@ -2,6 +2,7 @@
 #artix laptop install script
 sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service
 sh subscripts/yay-install
+sh subscripts/yay-universal
 sh subscripts/yay-laptop 
 sh subscripts/misc
 sudo mkinitcpio -P

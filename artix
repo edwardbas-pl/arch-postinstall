@@ -2,6 +2,7 @@
 #artix desktop install
 sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service
 sh subscripts/yay-install
+sh subscripts/yay-universal
 sh subscripts/yay-desktop 
 sh subscripts/misc
 sudo mkinitcpio -P

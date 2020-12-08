@@ -3,7 +3,8 @@
 
 sh subscripts/mirrors
 sh subscripts/yay-install
+sh subscripts/yay-universal
 sh subscripts/yay-laptop
 sh subscripts/misc
 sudo mkinitcpio -P
-sudo pacman -S code
+sh subscripts/systemd 

@@ -1,4 +1,4 @@
 #!/bin/sh
 #yay-laptop install script
-yay -Sy --noconfirm --noconfirm xf86-video-intel networkmanager network-manager-applet  
+yay -Sy --noconfirm --noconfirm networkmanager network-manager-applet  
 

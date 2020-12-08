@@ -6,17 +6,17 @@ clear
 if [[ ${CHOICE} == *VM* ]];
 then
 	echo "installing VM software..."
-	sh optional/VM
+	sh subscripts/optional/VM
 fi
 
 if [[ ${CHOICE} == *Games* ]];
 then
 	echo "Installing Game software..."
-	sh optional/games
+	sh subscripts/optional/games
 fi
 
 if [[ ${CHOICE} == *Printers* ]];
 then
 	echo "Installing Printer drivers..."
-	sh optional/printers
+	sh subscripts/optional/printers
 fi

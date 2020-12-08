@@ -8,4 +8,5 @@ sh subscripts/yay-desktop
 sh subscripts/misc
 sudo mkinitcpio -P
 sh subscripts/systemd 
+sh subscripts/dialog
 

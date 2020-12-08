@@ -1,7 +1,13 @@
 #!/bin/sh
 #arch laptop install script
 
-sh subscripts/mirrors
+#detect Arch vs Artix(runit version)
+distro=$( grep -m 1 /etc/os-release )
+if [[ ${distro} == *Arch* ]];
+then
+	sh subscripts/mirrors
+fi
+
 sh subscripts/yay-install
 sh subscripts/yay-universal
 sh subscripts/yay-laptop

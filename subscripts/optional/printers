@@ -1,0 +1,5 @@
+#!/bon/bash
+
+yay -S --noconfirm cups hplip hplip-plugin hpuld
+
+sudo systemctl enable --now cups

@@ -10,6 +10,7 @@ GUI_backend="xclip spectacle pulseaudio feh w3m alsa-firmware apulse pulseaudio-
 appearance=" python-pywal pfetch "
 terminal=" kitty "
 terminal_apps=" git rar dialog ranger gtop htop vim udisks2 "
+utniversity=" p3x-onentoe teams"
 other=" numlockx qbittorrent gimp dhcpcd code"
-yay -S --noconfirm  $compositor $web_browser $multimedia_player $office_suite $fonts $GUI $GUI_backend $appearance $terminal $terminal_apps $other
+yay -S --noconfirm  $compositor $web_browser $multimedia_player $office_suite $fonts $GUI $GUI_backend $appearance $terminal $terminal_apps $other $university
 

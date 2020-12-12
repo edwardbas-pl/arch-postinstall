@@ -1,22 +1,25 @@
 #!/bin/bash
 
 CHOICE=$(dialog --clear --title "Okno dialogowe Checklist" --backtitle "BASH" --checklist "Optional support for:" 10 40 3 VM "Enable KVM QEMU virtualization" "off" Games "Install necessary software for Gaming" "off" Printers "Add some printers support" "off" --stdout)
+pwd=$(pwd)
+path="$pwd/arch-postinsall/subscripts/optional"
 clear
 
 if [[ ${CHOICE} == *VM* ]];
 then
 	echo "installing VM software..."
-	sh subscripts/optional/VM
+	 sh VM
 fi
+
 
 if [[ ${CHOICE} == *Games* ]];
 then
 	echo "Installing Game software..."
-	sh subscripts/optional/games
+	sh games
 fi
 
 if [[ ${CHOICE} == *Printers* ]];
 then
 	echo "Installing Printer drivers..."
-	sh subscripts/optional/printers
+	sh printers
 fi

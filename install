@@ -2,7 +2,7 @@
 #Arch desktop install script
 
 #detect Arch vs Artix(runit version)
-distro=$( grep -m 1 /etc/os-release )
+distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then
 	sh subscripts/mirrors

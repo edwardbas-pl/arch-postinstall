@@ -18,7 +18,7 @@ sh subscripts/dialog
 
 if [[ ${distro} == *Arch* ]];
 then
-	sudo systemctl start lightdm
+	sudo systemctl enable lightdm
 fi
 
 if [[ ${distro} == *Artix* ]];

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+sudo pacman -Sy --noconfirm eb-tables dnsmasq qemu virt-managerp libvirt
+
+if [[ -d "/sys/firmware/efi/efivars" ]]
+then
+    sudo pacman -Sy --noconfirm ovmf
+fi
+
+distro=$( grep -m 1 NAME /etc/os-release )
+if [[ ${distro} == *Arch* ]];
+then
+    sudo systemcrtl enable libvirtd
+fi
+if [[ ${distro} == *Artix* ]];
+then
+    sudo pacman -S --noconfirm libvirt-runit
+    sudo ln -s /etc/runit/sv/libvirtd /run/runit/service`
+fi

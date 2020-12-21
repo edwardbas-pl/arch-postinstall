@@ -16,13 +16,13 @@ then
 fi
 if [[ ${GPU} == *Intel* ]];
 then
-	echo your GPU vendor is Intel
+	echo "your GPU vendor is Intel"
     sudo pacman -Sy --noconfirm lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
 if [[ ${GPU} == *NV* ]];
 then
-	echo your GPU vendor is NVidia
+	echo "your GPU vendor is NVidia"
 	sudo pacman -Sy --noconfirm nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loaderfi
 fi
 
 #game launchers
-sudo pacman -S lutris steam
+yay -Sy --noconfirm lutris steam gamemode

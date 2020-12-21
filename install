@@ -23,6 +23,7 @@ fi
 
 if [[ ${distro} == *Artix* ]];
 then
+	yay -S --noconfirm lightdm-runit
 	sudo ln -s /etc/runit/sv/lightdm /etc/runit/service
 fi
 

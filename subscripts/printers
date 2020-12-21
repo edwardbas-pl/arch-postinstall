@@ -1,0 +1,14 @@
+#!/bin/bash
+
+yay -S noconfirm hplip hplip-plugin cups hpuld pnm2ppa
+
+if [[ ${distro} == *Arch* ]];
+then
+    sudo systemctl enable --now cups
+fi
+
+if [[ ${distro} == *Artix* ]];
+then
+    sudo pacman -S cups-runit
+    sudo ln -s /etc/runit/sv/cups /run/runit/service
+fi

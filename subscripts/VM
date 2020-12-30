@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo pacman -Sy --noconfirm eb-tables dnsmasq qemu virt-manager 
-sudo pacman -S --noconfirm libvirt
+sudo pacman -Sy --noconfirm ebtables qemu virt-manager 
+sudo pacman -S --noconfirm libvirt dnsmasq 
 
 if [[ -d "/sys/firmware/efi/efivars" ]]
 then
@@ -11,7 +11,7 @@ fi
 distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then
-    sudo systemctl enable libvirtd
+    sudo systemctl enable --now libvirtd
 fi
 if [[ ${distro} == *Artix* ]];
 then

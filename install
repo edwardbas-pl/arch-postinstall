@@ -2,6 +2,7 @@
 #Arch desktop install script
 
 #detect Arch vs Artix(runit version)
+sudo pacman -Sy mesa-demos
 distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then
@@ -18,7 +19,7 @@ sh subscripts/dialog
 
 if [[ ${distro} == *Arch* ]];
 then
-	sudo systemctl enable lightdm
+	sudo systemctl enable lightdm --now
 fi
 
 if [[ ${distro} == *Artix* ]];

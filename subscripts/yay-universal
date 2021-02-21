@@ -11,6 +11,6 @@ appearance=" python-pywal pfetch "
 terminal=" kitty "
 terminal_apps=" git rar dialog ranger gtop htop vim udisks2 "
 utniversity=" p3x-onentoe teams"
-other=" numlockx qbittorrent gimp dhcpcd code"
+other=" numlockx qbittorrent gimp dhcpcd playerctl code"
 yay -S --noconfirm  $compositor $web_browser $multimedia_player $office_suite $fonts $GUI $GUI_backend $appearance $terminal $terminal_apps $other $university
 

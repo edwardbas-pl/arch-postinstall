@@ -1,4 +1,4 @@
 #!/bin/sh
 #yay-laptop install script
-yay -Sy --noconfirm --noconfirm networkmanager network-manager-applet  
+yay -Sy --noconfirm --noconfirm networkmanager network-manager-applet  tlp tp_smapi acpi_call
 

@@ -2,7 +2,7 @@
 #Arch desktop install script
 
 #detect Arch vs Artix(runit version)
-sudo pacman -Sy mesa-demos
+#sudo pacman -Sy mesa-demos
 distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then

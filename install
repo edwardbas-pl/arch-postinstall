@@ -19,7 +19,7 @@ yay_install(){
 }
 
 
-yay_Universal(){
+yay_universal(){
 	compositor="picom-jonaburg-git"
 	web_browser="firefox qutebrowser"
 	multimedia_player="mpv vlc"
@@ -136,10 +136,10 @@ laptop(){
 distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then
-	sh subscripts/mirrors
+	mirrors()
 fi
 yay_install()
-yay_Universal
+yay_universal()
 miscellaneous()
 gamse()
 #printers

@@ -139,8 +139,8 @@ then
 	mirrors
 fi
 #yay_install
-#yay_universal
-#miscellaneous
+yay_universal
+miscellaneous
 #games
 #printers
 

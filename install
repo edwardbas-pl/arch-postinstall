@@ -137,7 +137,7 @@ distro=$( grep -m 1 NAME /etc/os-release )
 if [[ ${distro} == *Arch* ]];
 then
 	mirrors()
-fi
+#fi
 yay_install()
 yay_universal()
 miscellaneous()

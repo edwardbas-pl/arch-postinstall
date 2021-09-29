@@ -13,7 +13,7 @@ yay_install (){
 	git clone https://aur.archlinux.org/yay-git.git 
 	cd yay-git
 	makepkg -si --noconfirm
-	cd
+	cd ..
 	rm -rf yay-git
 }
 

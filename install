@@ -134,10 +134,10 @@ laptop(){
 #detect Arch vs Artix(runit version)
 #sudo pacman -Sy mesa-demos
 distro=$( grep -m 1 NAME /etc/os-release )
-if [[ ${distro} == *Arch* ]];
-then
-	mirrors()
-fi
+#if [[ ${distro} == *Arch* ]];
+#then
+#	mirrors()
+#fi
 yay_install()
 yay_universal()
 miscellaneous()
@@ -146,7 +146,7 @@ gamse()
 
 if [[ -f /sys/clsass/power_supply/BAT0 ]]
 then
-	laptop
+	laptop()
 fi
 
 sudo mkinitcpio -P

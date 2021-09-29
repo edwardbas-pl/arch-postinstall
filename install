@@ -1,6 +1,7 @@
 #!/bin/sh
 #Arch desktop install script
 
+cd $HOME
 sudo pacman -Sy git --noconfirm
 #declaring bash functions
 mirrors (){

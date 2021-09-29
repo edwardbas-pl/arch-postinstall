@@ -1,7 +1,6 @@
 #!/bin/sh
 #Arch desktop install script
 
-cd $HOME
 sudo pacman -Sy git --noconfirm
 #declaring bash functions
 mirrors (){
@@ -11,8 +10,8 @@ mirrors (){
 }
 
 yay_install (){
-	git clone https://aur.archlinux.org/yay-git.git $HOME/yay-git
-	cd $HOME/yay-git
+	git clone https://aur.archlinux.org/yay-git.git 
+	cd yay-git
 	makepkg -si --noconfirm
 	cd
 	rm -rf yay-git

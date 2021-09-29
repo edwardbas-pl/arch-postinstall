@@ -2,13 +2,13 @@
 #Arch desktop install script
 
 #declaring bash functions
-mirrors(){
+mirrors (){
 	sudo pacman -Sy reflector --noconfirm
 	sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
 	sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 }
 
-yay_install(){
+yay_install (){
 	sudo pacman -Sy git --noconfirm
 	cd
 	git clone https://aur.archlinux.org/yay-git.git
@@ -19,7 +19,7 @@ yay_install(){
 }
 
 
-yay_universal(){
+yay_universal (){
 	compositor="picom-jonaburg-git"
 	web_browser="firefox qutebrowser"
 	multimedia_player="mpv vlc"

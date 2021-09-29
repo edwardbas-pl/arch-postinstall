@@ -94,7 +94,7 @@ games(){
 	sudo pacman -S --boconfirm --needed cabextract dosbox giflib gnutls gst-plugins-base-libs lib32-giflib lib32-gnutls lib32-gst-plugins-base-libs lib32-libcurl-gnutls lib32-libgcrypt lib32-libjpeg-turbo lib32-libpng lib32-libva lib32-libxslt lib32-mpg123 lib32-openal lib32-opencl-icd-loader lib32-sdl2 lib32-vkd3d lib32-vulkan-icd-loader libcurl-gnutls libgcrypt libjpeg-turbo libpng libva libxslt mono mpg123 openal opencl-icd-loader vkd3d vulkan-icd-loader wine-staging zstd gamemode lib32-gamemode 
 	yay -S dxvk-bin --noconfirm
 	#game launchers
-	yay -Sy --noconfirm lutris steam gamemode
+	sudo pacman -Sy --noconfirm lutris steam gamemode
 }
 	
 
@@ -150,6 +150,7 @@ fi
 
 sudo mkinitcpio -P
 
+yay_install
 
 if [[ ${distro} == *Arch* ]];
 then

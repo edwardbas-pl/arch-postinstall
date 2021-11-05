@@ -33,6 +33,8 @@ yay_universal (){
 	utniversity=" p3x-onentoe teams"
 	other=" numlockx qbittorrent gimp dhcpcd playerctl code"
 	yay -S --noconfirm  $compositor $web_browser $multimedia_player $office_suite $fonts $GUI $GUI_backend $appearance $terminal $terminal_apps $other $university
+	gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
+
 }
 
 miscellaneous(){

@@ -144,6 +144,7 @@ yay_install
 yay_universal
 miscellaneous
 games
+vm
 #printers
 
 if [[ -f /sys/clsass/power_supply/BAT0 ]]

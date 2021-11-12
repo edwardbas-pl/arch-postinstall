@@ -111,6 +111,7 @@ vm(){
 
 	sudo pacman -Sy --noconfirm ebtables 	
 	sudo pacman -S --noconfirm libvirt dnsmasq qemu virt-manager 
+	sudo virsh net-start default
 
 	if [[ -d "/sys/firmware/efi/efivars" ]]
 	then

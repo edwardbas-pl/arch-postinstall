@@ -109,8 +109,8 @@ printers(){
 
 vm(){
 
-	sudo pacman -Sy --noconfirm ebtables qemu virt-manager 
-	sudo pacman -S --noconfirm libvirt dnsmasq 
+	sudo pacman -Sy --noconfirm ebtables 	
+	sudo pacman -S --noconfirm libvirt dnsmasq qemu virt-manager 
 
 	if [[ -d "/sys/firmware/efi/efivars" ]]
 	then
